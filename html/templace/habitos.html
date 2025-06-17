@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pancomido - Hábitos y Tareas</title>
+<link rel="stylesheet" href="/html/styles/styles.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <!-- FOTO DE PERFIL -->
+    <label for="profileInput">
+        <img id="profilePic" src="https://placehold.co/600x600?text=Foto" alt="Foto de perfil">
+    </label>
+    <input id="profileInput" type="file" accept="image/*" hidden>
+
+    <div id="userName">USUARIO</div>
+
+    <!-- BOTÓN Y FORMULARIO -->
+    <button id="addTaskBtn">+ añadir tarea</button>
+
+    <div id="taskForm">
+        <select id="categorySelect">
+            <option value="habitos">Hábitos</option>
+            <option value="diarias">Tareas diarias</option>
+            <option value="pendientes">Tareas pendientes</option>
+        </select>
+        <input id="taskInput" type="text" placeholder="Escribe la tarea y pulsa Enter">
+    </div>
+
+    <!-- COLUMNAS -->
+    <div class="columns">
+        <div class="card"><h3>HÁBITOS</h3><ul id="habitosList"></ul></div>
+        <div class="card"><h3>TAREAS DIARIAS</h3><ul id="diariasList"></ul></div>
+        <div class="card"><h3>TAREAS PENDIENTES</h3><ul id="pendientesList"></ul></div>
+    </div>
+</div>
+</body>
+</html>

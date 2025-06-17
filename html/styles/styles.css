@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: #EAEBD0;
+}
+
+.inicio_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78vh;
+    max-width: 1051px;          
+    margin: 5% auto;           
+    background-color: #DA6C6C;
+    border-radius: 29px;     
+}
+
+.inicio_register{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 78vh;
+    max-width: 1051px;          
+    margin: 5% auto;           
+    background-color: #DA6C6C;
+    border-radius: 29px;     
+}
+
+.imagen{
+    background-image: url("/styles/img/login_register.jfif");
+    width: 50%;
+    height: 100%;
+    border-radius: 29px;
+}
+
+.login-image {
+    width: 100%;
+    height: 78vh;
+    object-fit: cover;
+    border-radius: 29px;
+}
+
+.login{ 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1 {
+    font-family: Owswald, sans-serif;
+    color: #000000;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.Usuario{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.Usuario label {
+    font-family: Owswald, sans-serif;
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 33px;
+}
+
+.Usuario input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    border-radius: 29px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: none;
+}
+
+.olvidasteTuContraseña a{
+    font-family: oWswald, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.yaTienesCuenta{
+    font-family: Owswald, sans-serif;
+    margin-top: 20px;
+}
+
+.yaTienesCuenta a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.boton{
+    font-family: Owswald, sans-serif;
+    width: 165px;
+    margin-top: 30px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #AF3E3E;
+
+}
+
+.boton:hover{
+    background-color: #A42020;
+    cursor: pointer;
+}
+
+.botton{
+    width: 215px;
+    margin-top: 25px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #A42020;
+}
+
+.botton:hover{
+    background-color: #A90707;
+    cursor: pointer;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#profilePic {
+     margin: 100px auto 0 auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover; /* Recorta la imagen para que llene el contenedor */
+    cursor: pointer;
+    border: 4px solid #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+#profilePic:hover {
+    transform: scale(1.05); /* Hace un pequeño zoom */
+}
+
+/* Nombre del usuario */
+#userName {
+    font-family: owswald, sans-serif;
+    font-weight: bold;
+    margin-top: 12px;
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Botón para agregar una tarea */
+#addTaskBtn {
+    font-family: owswald, sans-serif;
+    margin: 8px auto 25px;
+    padding: 6px 14px;
+    background: #a51f1f; /* Rojo oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+/* Formulario para agregar tareas (inicialmente oculto) */
+#taskForm {
+    display: none;
+    margin-bottom: 35px;
+}
+
+/* Campos del formulario (select e input) */
+#taskForm select,
+#taskForm input {
+    font-family: owswald, sans-serif;
+    padding: 6px 10px;
+    border: 2px solid #a51f1f;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.9rem;
+    margin: 2px;
+}
+
+/* Campo de texto del formulario */
+#taskForm input {
+    width: 200px;
+}
+
+/* Contenedor de columnas donde se organizan las tarjetas de tareas */
+.columns {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Tarjeta individual para cada categoría de tarea */
+.card {
+    width: 280px;
+    min-height: 230px;
+    background: #d96c6c; /* Rojo claro */
+    border-radius: 10px;
+    padding: 20px 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título de la tarjeta */
+.card h3 {
+    font-family: Owswald, sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+}
+
+/* Lista de tareas dentro de una tarjeta */
+.card ul {
+    list-style: none;
+    flex: 1;
+}
+
+/* Estilo para cada tarea individual */
+.card li {
+    font-family: Owswald, sans-serif;
+    background: #fff;
+    border-left: 8px solid #8b1a1a; /* Línea roja a la izquierda */
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    word-wrap: break-word;
+}

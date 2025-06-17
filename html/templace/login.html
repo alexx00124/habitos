@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href ="/html/styles/styles.css">
+</head>
+<body>
+    <form>
+        <div class="inicio_login">
+            <div class="imagen">
+                <img src="/html/styles/img/login_register.jfif" alt="Login Image" class="login-image">
+            </div>
+            <div class="login">
+                <h1>Login</h1>
+                <div class="Usuario">
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" id="Usuario" name="Usuario" required>
+                </div>
+            <div class="Usuario">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="olvidasteTuContraseña">
+                <a href="/forgot-password">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div>
+                <button type="submit" class="boton">Iniciar Sesión</button>
+            </div>
+            <div>
+                <button type="submit" onclick="location.href='/regis'" class="botton">Crear Nueva Cuenta</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
