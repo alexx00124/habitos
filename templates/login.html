@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href ="/html/styles/styles.css">
+    <link rel="stylesheet" href ="/static/styles/styles.css">
 </head>
 <body>
     <form>
         <div class="inicio_login">
             <div class="imagen">
-                <img src="/html/styles/img/login_register.jfif" alt="Login Image" class="login-image">
+                <img src="/static/styles/img/login_register.jfif" alt="Login Image" class="login-image">
             </div>
             <div class="login">
                 <h1>Login</h1>
@@ -26,10 +26,10 @@
                 <a href="/forgot-password">¿Olvidaste tu contraseña?</a>
             </div>
             <div>
-                <button type="submit" class="boton">Iniciar Sesión</button>
+                <button type="submit" onclick="location.href='/habitos'"   class="boton">Iniciar Sesión</button>
             </div>
             <div>
-                <button type="submit" onclick="location.href='/regis'" class="botton">Crear Nueva Cuenta</button>
+                <button type="submit" onclick="location.href='/register'" class="botton">Crear Nueva Cuenta</button>
             </div>
         </div>
     </form>

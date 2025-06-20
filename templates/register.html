@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Crear cuenta</title>
-  <link rel="stylesheet" href="/html/styles/styles.css">
+  <link rel="stylesheet" href="/static/styles/styles.css">
 </head>
 <body>
     <form>
         <div class="inicio_register">
             <div class="imagen">
-                <img src="/html/styles/img/login_register.jfif" alt="Login Image" class="login-image">
+                <img src="/static/styles/img/login_register.jfif" alt="Login Image" class="login-image">
             </div>
             <div class="login">
                 <h1>Crea una cuenta</h1>
@@ -22,7 +22,7 @@
                 <input type="password" id="contrasena" name="contrasena" required>
             </div>
             <div>
-                <button type="submit" class="boton">registrarte</button>
+                <button type="submit" onclick="location.href='/login'" class="botton">registrate</button>
             </div>
             <div class="yaTienesCuenta">
                 <a href="/forgot-password">¿ya tienes cuenta?</a>
